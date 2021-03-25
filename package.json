@@ -1,0 +1,28 @@
+{
+  "name": "eslint-config-react-yas",
+  "version": "1.0.0",
+  "description": "YAS. An ESLint config that, you know, just works and makes sense and requires no more setup",
+  "main": "index.js",
+  "repository": "git@github.com:benduran/eslint-config-react-yas.git",
+  "author": "Benjamin Duran <stratodyne@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
+    "babel-eslint": "^10.0.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "prettier": "^2.2.1"
+  },
+  "files": [
+    "index.js"
+  ]
+}
