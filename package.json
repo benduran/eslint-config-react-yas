@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-react-yas",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "YAS. An ESLint config that, you know, just works and makes sense and requires no more setup",
   "main": "index.js",
   "repository": "git@github.com:benduran/eslint-config-react-yas.git",
