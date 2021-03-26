@@ -1,5 +1,5 @@
 # eslint-config-react-yas
-YAS. An ESLint config that, you know, just works and makes sense and requires no more setup
+YAS. An ESLint config that, you know, just works and makes sense and requires no more setup. This is a "batteries-included" eslint config, and comes with the correct base `eslint` dependency, all required `eslint` plugins, as well as the correct version of `prettier` and connective tissue. Enjoy!
 
 ## Installation
 **Yarn**
