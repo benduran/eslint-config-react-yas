@@ -1,9 +1,8 @@
 module.exports = {
   extends: ['eslint-config-react-app', 'plugin:prettier/recommended'],
   rules: {
-    // We leave a little extra buffer over the print width, in case there are really long strings
-    // that aren't well-suited for printWidth wrapping
-    'max-len': ['error', 160],
+    // Let the print width, below, take care of this
+    'max-len': ['off'],
     'prettier/prettier': [
       'error',
       {
