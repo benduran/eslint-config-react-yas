@@ -1,19 +1,20 @@
 module.exports = {
   extends: ['eslint-config-react-app', 'plugin:prettier/recommended'],
+  plugins: ['simple-import-sort', 'sort-keys-fix'],
   rules: {
     // Let the print width, below, take care of this
     'max-len': ['off'],
     'prettier/prettier': [
       'error',
       {
-        // Prettier default configuation overrides.
-        singleQuote: true,
-        jsxSingleQuote: true,
         arrowParens: 'avoid',
-        trailingComma: 'all',
+        jsxSingleQuote: true,
         // Note this is not the same behavior as eslint's "max-len":
         // https://prettier.io/docs/en/options.html#print-width
         printWidth: 120,
+        // Prettier default configuation overrides.
+        singleQuote: true,
+        trailingComma: 'all',
       },
       {
         // eslint-plugin-prettier will pick up prettier configurations further up
@@ -22,5 +23,9 @@ module.exports = {
         usePrettierrc: false,
       },
     ],
+    'simple-import-sort/exports': 'error',
+    'simple-import-sort/imports': 'error',
+    'sort-keys': ['error', 'asc', { caseSensitive: true, natural: true }],
+    'sort-keys-fix/sort-keys-fix': 'error',
   },
 };
