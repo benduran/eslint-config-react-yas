@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['eslint-config-react-app', 'plugin:prettier/recommended'],
-  plugins: ['simple-import-sort', 'sort-keys-fix'],
+  plugins: ['simple-import-sort'],
   rules: {
     // Let the print width, below, take care of this
     'max-len': ['off'],
@@ -25,7 +25,5 @@ module.exports = {
     ],
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': 'error',
-    'sort-keys': ['error', 'asc', { caseSensitive: true, natural: true }],
-    'sort-keys-fix/sort-keys-fix': 'error',
   },
 };
