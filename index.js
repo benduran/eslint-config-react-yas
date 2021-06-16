@@ -4,6 +4,7 @@ module.exports = {
   rules: {
     // Let the print width, below, take care of this
     'max-len': ['off'],
+    'no-var': ['error'],
     'prettier/prettier': [
       'error',
       {
