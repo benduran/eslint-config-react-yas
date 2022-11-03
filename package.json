@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "eslint": "^8.24.0",
+    "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-jsx-a11y": "^6.6.1",
