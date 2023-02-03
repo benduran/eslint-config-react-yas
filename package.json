@@ -8,13 +8,13 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "eslint": "^8.26.0",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-simple-import-sort": "^8.0.0",
-    "prettier": "^2.7.1"
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^2.8.3"
   },
   "files": [
     "index.js"
