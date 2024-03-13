@@ -1,3 +1,11 @@
+## 4.1.1-beta.2 (2024-03-13)
+
+### 🔀 Miscellaneous 🔀
+
+- chore: fixed npm audit (b8d312d6c321879c7f5408b0ac0e158c0b245a9f)
+
+---
+
 ## 4.1.1-beta.1 (2024-03-13)
 
 ### 🔀 Miscellaneous 🔀
