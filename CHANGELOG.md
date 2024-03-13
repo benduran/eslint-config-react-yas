@@ -1,3 +1,11 @@
+## 4.1.1-beta.1 (2024-03-13)
+
+### 🔀 Miscellaneous 🔀
+
+- Version bump forced for all
+
+---
+
 ## 4.1.1-beta.0 (2024-03-13)
 
 ### 🔀 Miscellaneous 🔀
