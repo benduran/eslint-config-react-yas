@@ -9,9 +9,9 @@
   "private": false,
   "dependencies": {
     "eslint": "^8.57.0",
-    "eslint-plugin-detect-bad-words": "^1.0.7",
     "eslint-config-prettier": "^8.10.0",
     "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-detect-bad-words": "^1.0.7",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
@@ -19,5 +19,8 @@
   },
   "files": [
     "index.js"
-  ]
+  ],
+  "devDependencies": {
+    "@better-builds/lets-version": "^0.8.4"
+  }
 }
