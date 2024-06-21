@@ -26,6 +26,7 @@ export default tseslint.config(
     rules: {
       // Let the print width, below, take care of this
       'max-len': ['off'],
+      'no-async-promise-executor': 'off',
       'no-var': ['error'],
       'prettier/prettier': [
         'error',
