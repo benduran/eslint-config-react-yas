@@ -1,3 +1,11 @@
+## 5.0.1-beta.0 (2024-06-21)
+
+### 🛠️ Fixes 🛠️
+
+- fix: added missing console variable (8f4db94ae062ed9db3dc7f5fdf3966660e4316e2)
+
+---
+
 ## 5.0.0 (2024-06-21)
 
 ### 🔀 Miscellaneous 🔀
