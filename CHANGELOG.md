@@ -1,3 +1,11 @@
+## 5.0.0 (2024-06-21)
+
+### 🔀 Miscellaneous 🔀
+
+- Merge pull request #5 from benduran/bduran/drop-react-scripts (d418ec125a1b6038f58551ebb737cb1fabfbce40)
+
+---
+
 ## 4.2.1-beta.1 (2024-06-21)
 
 ### 🛠️ Fixes 🛠️
