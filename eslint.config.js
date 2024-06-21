@@ -15,6 +15,7 @@ export default tseslint.config(
       ecmaVersion: 'latest',
       globals: {
         console: 'readonly',
+        process: 'readonly',
       },
     },
     name: 'eslint-config-react-yas-overrides',
