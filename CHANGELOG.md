@@ -1,3 +1,17 @@
+## 4.2.1-beta.0 (2024-06-21)
+
+### 📖 Docs 📖
+
+- docs: updated readme with (hopefully) the correct instructions (25b96cd52b26198081b485c155dd3a5af23a21e8)
+
+
+
+### 🚨 Breaking Changes 🚨
+
+- feat!: moved to the new flat config format and the max version of eslint allowed by the upgraded config and plugin dependencies (d06ed6d4addce4dafa398c1170402057d9a52f71)
+
+---
+
 ## 4.2.0 (2024-05-29)
 
 ### 🔀 Miscellaneous 🔀
