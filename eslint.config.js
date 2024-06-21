@@ -51,6 +51,7 @@ export default tseslint.config(
       'simple-import-sort/imports': 'error',
       'detect-bad-words/in-code': 'error',
       'detect-bad-words/in-comment': 'error',
+      '@typescript-eslint/no-explicit-any': 'off',
     },
   },
 );
