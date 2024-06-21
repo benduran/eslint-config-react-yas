@@ -8,12 +8,25 @@ YAS. An ESLint config that, you know, just works and makes sense and requires no
 **NPM**
 `npm install eslint-config-react-yas --save-dev`
 
-## Usage
+## Usage 
+
+### Legacy format
+
 In your `.eslintrc.json` (or `eslintrc.js` or equivalent)
 ```
 {
   "extends": "eslint-config-react-yas"
 }
+```
+
+### Flat format
+
+For the newish [flat configuration](https://github.com/prettier/eslint-plugin-prettier?tab=readme-ov-file#installation:~:text=For-,flat%20configuration,-%2C%20this%20plugin%20ships), create an `eslint.config.js` file (if you don't already have one), and be sure to import `eslintConfigReactYas` at the top, then specify it in your config array:
+
+```javascript
+import eslintConfigReactYas from 'eslint-config-react-yas';
+
+export default [...eslintConfigReactYas, /* place any additional configs or overrides here */];
 ```
 
 ## Why?
