@@ -1,3 +1,11 @@
+## 5.0.4 (2024-06-21)
+
+### 🛠️ Fixes 🛠️
+
+- fix: allow typescript to be a smidge more permissive with the use of any (which is valuable in certain conditions) (128087e23c0b19ffc5ce10a6cceca3371b82d6b2)
+
+---
+
 ## 5.0.3 (2024-06-21)
 
 ### 🔀 Miscellaneous 🔀
