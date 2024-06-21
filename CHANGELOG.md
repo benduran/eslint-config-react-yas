@@ -1,3 +1,11 @@
+## 5.0.2 (2024-06-21)
+
+### 🛠️ Fixes 🛠️
+
+- fix: added missing process variable (9e742d99043c1bf799e1ca3c9886db274da02578)
+
+---
+
 ## 5.0.1 (2024-06-21)
 
 ### 🔀 Miscellaneous 🔀
