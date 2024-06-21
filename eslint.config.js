@@ -11,6 +11,12 @@ export default tseslint.config(
   eslintConfigPrettier,
   eslintPluginPrettierRecommend,
   {
+    languageOptions: {
+      ecmaVersion: 'latest',
+      globals: {
+        console: 'readonly',
+      },
+    },
     name: 'eslint-config-react-yas-overrides',
     plugins: {
       'simple-import-sort': simpleImportSort,
