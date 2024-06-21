@@ -1,3 +1,11 @@
+## 4.2.1-beta.1 (2024-06-21)
+
+### 🛠️ Fixes 🛠️
+
+- fix: added missing module exports (26915a4266da836408bce274b7fa69b341790f81)
+
+---
+
 ## 4.2.1-beta.0 (2024-06-21)
 
 ### 📖 Docs 📖
