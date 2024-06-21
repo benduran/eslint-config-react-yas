@@ -1,3 +1,11 @@
+## 5.0.3 (2024-06-21)
+
+### 🔀 Miscellaneous 🔀
+
+- chore: disable disallowing usage of async keyboard as a promise callback (992da88a9e44192cf3383066d4c05cf000c4fd88)
+
+---
+
 ## 5.0.2 (2024-06-21)
 
 ### 🛠️ Fixes 🛠️
