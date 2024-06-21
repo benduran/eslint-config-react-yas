@@ -1,3 +1,11 @@
+## 5.0.1 (2024-06-21)
+
+### 🔀 Miscellaneous 🔀
+
+- Version bump forced for all
+
+---
+
 ## 5.0.1-beta.0 (2024-06-21)
 
 ### 🛠️ Fixes 🛠️
