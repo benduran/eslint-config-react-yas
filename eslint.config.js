@@ -1,8 +1,10 @@
 import eslint from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import declareBadWordsPlugin from 'eslint-plugin-detect-bad-words';
+import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import eslintPluginPrettierRecommend from 'eslint-plugin-prettier/recommended';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
+import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
@@ -10,18 +12,27 @@ export default tseslint.config(
   ...tseslint.configs.recommended,
   eslintConfigPrettier,
   eslintPluginPrettierRecommend,
+  jsxA11yPlugin.flatConfigs.recommended,
   {
+    files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
     languageOptions: {
       ecmaVersion: 'latest',
       globals: {
-        console: 'readonly',
-        process: 'readonly',
+        ...globals.browser,
+        ...globals.node,
+        ...globals.serviceworker,
+        ...globals.es2024,
+      },
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
       },
     },
     name: 'eslint-config-react-yas-overrides',
     plugins: {
-      'simple-import-sort': simpleImportSort,
       'detect-bad-words': declareBadWordsPlugin,
+      'simple-import-sort': simpleImportSort,
     },
     rules: {
       // Let the print width, below, take care of this
