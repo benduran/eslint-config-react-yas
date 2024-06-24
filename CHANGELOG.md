@@ -1,3 +1,11 @@
+## 5.1.0 (2024-06-24)
+
+### ✨ Features ✨
+
+- feat: added missing a11y support (1d90b1f5c64942e7c78c3bd252de7395b0f912f0)
+
+---
+
 ## 5.0.4 (2024-06-21)
 
 ### 🛠️ Fixes 🛠️
