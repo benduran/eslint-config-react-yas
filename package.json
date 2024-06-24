@@ -30,6 +30,6 @@
     "eslint.config.js"
   ],
   "devDependencies": {
-    "@better-builds/lets-version": "^1.1.0"
+    "@better-builds/lets-version": "^1.1.2"
   }
 }
