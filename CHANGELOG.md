@@ -1,3 +1,41 @@
+## 5.1.1-beta.3 (2024-10-07)
+
+### 🛠️ Fixes 🛠️
+
+- fix: missing dep (75404337167b8b932d5d8dbb4486ff66fb8378f2)
+
+---
+
+## 5.1.1-beta.2 (2024-10-07)
+
+### 🛠️ Fixes 🛠️
+
+- fix: made hooks rules errors (066d868b2b0e2b683e32f64d3b8a4604fcb57580)
+
+---
+
+## 5.1.1-beta.1 (2024-10-07)
+
+### 🛠️ Fixes 🛠️
+
+- fix: added missing react rules (72bbd5203858ae4a51b1ee407ef692e9b13279d2)
+
+---
+
+## 5.1.1-beta.0 (2024-10-07)
+
+### 🛠️ Fixes 🛠️
+
+- fix: added missingrules of hooks (5cf5a1e60de87f4be73c28b578f0c2e43b348f79)
+
+
+
+### 🔀 Miscellaneous 🔀
+
+- chore: bumped deps (d3bf4583956120c32d06867e5071666b98449adc)
+
+---
+
 ## 5.1.0 (2024-06-24)
 
 ### ✨ Features ✨
