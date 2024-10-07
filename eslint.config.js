@@ -1,12 +1,15 @@
+import { fixupPluginRules } from "@eslint/compat";
 import eslint from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import declareBadWordsPlugin from 'eslint-plugin-detect-bad-words';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import eslintPluginPrettierRecommend from 'eslint-plugin-prettier/recommended';
-import hooks from 'eslint-plugin-react-hooks';
+import reactPlugin from "eslint-plugin-react";
+import reactHooksPlugin from "eslint-plugin-react-hooks";
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
+
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -33,10 +36,13 @@ export default tseslint.config(
     name: 'eslint-config-react-yas-overrides',
     plugins: {
       'detect-bad-words': declareBadWordsPlugin,
-      'react-hooks': hooks,
+      // @ts-ignore
+      react: reactPlugin,
+      "react-hooks": fixupPluginRules(reactHooksPlugin),
       'simple-import-sort': simpleImportSort,
     },
     rules: {
+      ...reactHooksPlugin.configs.recommended.rules,
       // Let the print width, below, take care of this
       'max-len': ['off'],
       'no-async-promise-executor': 'off',
