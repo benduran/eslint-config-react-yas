@@ -1,3 +1,17 @@
+## 5.1.1-beta.0 (2024-10-07)
+
+### 🛠️ Fixes 🛠️
+
+- fix: added missingrules of hooks (5cf5a1e60de87f4be73c28b578f0c2e43b348f79)
+
+
+
+### 🔀 Miscellaneous 🔀
+
+- chore: bumped deps (d3bf4583956120c32d06867e5071666b98449adc)
+
+---
+
 ## 5.1.0 (2024-06-24)
 
 ### ✨ Features ✨
