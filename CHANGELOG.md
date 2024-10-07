@@ -1,3 +1,11 @@
+## 5.1.1-beta.1 (2024-10-07)
+
+### 🛠️ Fixes 🛠️
+
+- fix: added missing react rules (72bbd5203858ae4a51b1ee407ef692e9b13279d2)
+
+---
+
 ## 5.1.1-beta.0 (2024-10-07)
 
 ### 🛠️ Fixes 🛠️
