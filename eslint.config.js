@@ -3,6 +3,7 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 import declareBadWordsPlugin from 'eslint-plugin-detect-bad-words';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import eslintPluginPrettierRecommend from 'eslint-plugin-prettier/recommended';
+import hooks from 'eslint-plugin-react-hooks';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
@@ -32,6 +33,7 @@ export default tseslint.config(
     name: 'eslint-config-react-yas-overrides',
     plugins: {
       'detect-bad-words': declareBadWordsPlugin,
+      'react-hooks': hooks,
       'simple-import-sort': simpleImportSort,
     },
     rules: {
