@@ -1,3 +1,11 @@
+## 5.2.0 (2024-10-07)
+
+### 🔀 Miscellaneous 🔀
+
+- Merge pull request #6 from benduran/bduran/add-hooks (8ef4f814397db1afc0b40de15def4eb4224530e5)
+
+---
+
 ## 5.1.1-beta.3 (2024-10-07)
 
 ### 🛠️ Fixes 🛠️
