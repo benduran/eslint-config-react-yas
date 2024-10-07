@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-react-yas",
-  "version": "5.1.1-beta.2",
+  "version": "5.1.1-beta.3",
   "description": "YAS. An ESLint config that, you know, just works and makes sense and requires no more setup",
   "main": "eslint.config.js",
   "module": "eslint.config.js",
