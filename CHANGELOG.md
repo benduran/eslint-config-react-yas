@@ -1,3 +1,11 @@
+## 5.2.2 (2024-11-17)
+
+### 🛠️ Fixes 🛠️
+
+- fix: downgraded eslint to 9.14 to fix a parsing bug that still hasn't been fixed (51e22c356d578b862e342e2d21febec488bd5860)
+
+---
+
 ## 5.2.1 (2024-11-17)
 
 ### 🔀 Miscellaneous 🔀
