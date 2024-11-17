@@ -1,3 +1,11 @@
+## 5.2.1 (2024-11-17)
+
+### 🔀 Miscellaneous 🔀
+
+- chore: bumped deps to fix bugs (cf696a519679f59e63430033571b073796c9f39b)
+
+---
+
 ## 5.2.0 (2024-10-07)
 
 ### 🔀 Miscellaneous 🔀
