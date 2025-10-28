@@ -24,9 +24,18 @@ In your `.eslintrc.json` (or `eslintrc.js` or equivalent)
 For the newish [flat configuration](https://github.com/prettier/eslint-plugin-prettier?tab=readme-ov-file#installation:~:text=For-,flat%20configuration,-%2C%20this%20plugin%20ships), create an `eslint.config.js` file (if you don't already have one), and be sure to import `eslintConfigReactYas` at the top, then specify it in your config array:
 
 ```javascript
-import eslintConfigReactYas from 'eslint-config-react-yas';
+import { standalone } from 'eslint-config-react-yas';
 
-export default [...eslintConfigReactYas, /* place any additional configs or overrides here */];
+export default [...standalone, /* place any additional configs or overrides here */];
+```
+
+This config, above, will be a fully-standlone experience, complete with its own prettier ruleset.
+If you would prefer to respect the prettier config file(s) you have in your repository, you can use a different config:
+
+```javascript
+import { respectPrettierConfig } from 'eslint-config-react-yas';
+
+export default [...respectPrettierConfig, /* additional configs here, as needed */];
 ```
 
 ## Why?
