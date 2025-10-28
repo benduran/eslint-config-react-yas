@@ -1,3 +1,17 @@
+## 6.0.2 (2025-10-28)
+
+### 📖 Docs 📖
+
+- docs: updated readme (03f9c4df392ba2a3b7ed7ef53ea11ac3e6108c2e)
+
+
+
+### 🔀 Miscellaneous 🔀
+
+- chore: oops missed a file (358aea4478b39ddf0f4756480eba9f3a4505e9c0)
+
+---
+
 ## 6.0.1 (2025-10-28)
 
 ### 🔀 Miscellaneous 🔀
