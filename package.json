@@ -18,7 +18,8 @@
   "license": "MIT",
   "private": false,
   "files": [
-    "config.js"
+    "config.js",
+    "types.d.ts"
   ],
   "scripts": {
     "build": "ts-duality"
