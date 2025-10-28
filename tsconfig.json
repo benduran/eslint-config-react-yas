@@ -28,6 +28,6 @@
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
   },
-  "include": ["config.js", "eslint.config.js", "@types/"],
+  "include": ["config.js", "eslint.config.js", "@types/", "types.d.ts"],
   "exclude": ["node_modules"]
 }

@@ -5,9 +5,14 @@
   "main": "config.js",
   "module": "config.js",
   "exports": {
-    ".": "./config.js"
+    ".": {
+      "default": "./config.js",
+      "types": "./types.d.ts"
+    }
   },
   "type": "module",
+  "types": "./types.d.ts",
+  "typings": "./types.d.ts",
   "repository": "git@github.com:benduran/eslint-config-react-yas.git",
   "author": "Benjamin Duran <stratodyne@gmail.com>",
   "license": "MIT",
