@@ -1,3 +1,11 @@
+## 6.0.1 (2025-10-28)
+
+### 🔀 Miscellaneous 🔀
+
+- chore: added typings file (306656e033051fa1365d1396ab022b6ca5b6292b)
+
+---
+
 ## 6.0.0 (2025-10-28)
 
 ### 🚨 Breaking Changes 🚨
