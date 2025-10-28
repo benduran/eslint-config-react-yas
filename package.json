@@ -2,37 +2,32 @@
   "name": "eslint-config-react-yas",
   "version": "5.2.2",
   "description": "YAS. An ESLint config that, you know, just works and makes sense and requires no more setup",
-  "main": "eslint.config.js",
-  "module": "eslint.config.js",
+  "main": "config.js",
+  "module": "config.js",
   "exports": {
-    ".": "./eslint.config.js"
+    ".": "./config.js"
   },
   "type": "module",
   "repository": "git@github.com:benduran/eslint-config-react-yas.git",
   "author": "Benjamin Duran <stratodyne@gmail.com>",
   "license": "MIT",
   "private": false,
-  "dependencies": {
-    "@eslint/compat": "^1.2.3",
-    "@eslint/js": "^9.15.0",
-    "@types/eslint__js": "^8.42.3",
-    "eslint": "~9.14.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-detect-bad-words": "^1.0.7",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "globals": "^15.12.0",
-    "prettier": "^3.3.3",
-    "typescript": "^5.6.3",
-    "typescript-eslint": "^8.14.0"
-  },
   "files": [
-    "eslint.config.js"
+    "config.js"
   ],
+  "scripts": {
+    "build": "ts-duality"
+  },
+  "dependencies": {
+    "@cprussin/eslint-config": "^5.0.0",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-detect-bad-words": "^1.0.7",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2"
+  },
   "devDependencies": {
-    "@better-builds/lets-version": "^1.1.4"
+    "@better-builds/lets-version": "^1.4.0",
+    "@better-builds/ts-duality": "0.0.1-beta.2"
   }
 }

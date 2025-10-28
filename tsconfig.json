@@ -1,10 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": [
-      "ESNext",
-      "DOM"
-    ],
+    "lib": ["ESNext", "DOM"],
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "allowJs": true,
@@ -31,6 +28,6 @@
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
   },
-  "include": ["eslint.config.js", "@types/"],
+  "include": ["config.js", "eslint.config.js", "@types/"],
   "exclude": ["node_modules"]
 }
