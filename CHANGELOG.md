@@ -1,3 +1,11 @@
+## 6.0.0 (2025-10-28)
+
+### 🚨 Breaking Changes 🚨
+
+- feat!: added cprussin ruleset as baseline with a standalone option (033be0c4d61f286c5ee0ed539cca600ccc173e9a)
+
+---
+
 ## 5.2.2 (2024-11-17)
 
 ### 🛠️ Fixes 🛠️
