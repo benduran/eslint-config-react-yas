@@ -21,9 +21,6 @@
     "config.js",
     "types.d.ts"
   ],
-  "scripts": {
-    "build": "ts-duality"
-  },
   "dependencies": {
     "@cprussin/eslint-config": "^5.0.0",
     "eslint": "^9.22.0",
@@ -33,7 +30,6 @@
     "prettier": "^3.6.2"
   },
   "devDependencies": {
-    "@better-builds/lets-version": "^1.4.0",
-    "@better-builds/ts-duality": "0.0.1-beta.2"
+    "@better-builds/lets-version": "^1.4.0"
   }
 }
