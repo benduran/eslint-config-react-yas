@@ -33,6 +33,7 @@ export const standalone = [
           usePrettierrc: false,
         },
       ],
+      'turbo/no-undeclared-env-vars': 'off',
     },
   },
 ];
