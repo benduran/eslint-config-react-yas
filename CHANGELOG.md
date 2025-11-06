@@ -1,3 +1,11 @@
+## 6.0.3 (2025-11-06)
+
+### 🔀 Miscellaneous 🔀
+
+- chore: remove the turbo env vars rule so it's not *that* opinionated (48ade7c9a8cc9b0436d51b53b49497e10409b337)
+
+---
+
 ## 6.0.2 (2025-10-28)
 
 ### 📖 Docs 📖
