@@ -1,3 +1,17 @@
+## 6.0.4 (2025-11-07)
+
+### 🛠️ Fixes 🛠️
+
+- fix: fixed respectPrettierConfig variant so it does not use the turbo env vars rule (cb8172a56cdf124305917acebebf2acc3a2a9802)
+
+
+
+### 🔀 Miscellaneous 🔀
+
+- chore: removed ts-duality because it isn't needed (85c6bacd5e16c435cb39beda701324d0377d9052)
+
+---
+
 ## 6.0.3 (2025-11-06)
 
 ### 🔀 Miscellaneous 🔀
