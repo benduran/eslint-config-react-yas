@@ -50,6 +50,7 @@ export const respectPrettierConfig = [
     rules: {
       'detect-bad-words/in-code': 'error',
       'detect-bad-words/in-comment': 'error',
+      'turbo/no-undeclared-env-vars': 'off',
     },
   },
 ];
