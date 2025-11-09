@@ -34,6 +34,7 @@ export const standalone = [
         },
       ],
       'turbo/no-undeclared-env-vars': 'off',
+      'unicorn/filename-case': 'off',
     },
   },
 ];
@@ -51,6 +52,7 @@ export const respectPrettierConfig = [
       'detect-bad-words/in-code': 'error',
       'detect-bad-words/in-comment': 'error',
       'turbo/no-undeclared-env-vars': 'off',
+      'unicorn/filename-case': 'off',
     },
   },
 ];
