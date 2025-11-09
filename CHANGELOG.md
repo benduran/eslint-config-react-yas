@@ -1,3 +1,11 @@
+## 6.0.5 (2025-11-09)
+
+### 🔀 Miscellaneous 🔀
+
+- chore: disable the filename-kebab naming standards because it is too pedantic (7fca81cb2cbf2d62d7d02b490336793fd38dd0e2)
+
+---
+
 ## 6.0.4 (2025-11-07)
 
 ### 🛠️ Fixes 🛠️
