@@ -1,3 +1,11 @@
+## 6.0.6 (2025-11-20)
+
+### 🔀 Miscellaneous 🔀
+
+- chore: disabled annoying not published rule (935249b5f9e0557c154f9aa712b0178bc2f04920)
+
+---
+
 ## 6.0.5 (2025-11-09)
 
 ### 🔀 Miscellaneous 🔀
