@@ -1,20 +1,35 @@
-import { base } from '@cprussin/eslint-config';
+import { react as base } from '@cprussin/eslint-config';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import declareBadWordsPlugin from 'eslint-plugin-detect-bad-words';
 import eslintPluginPrettierRecommend from 'eslint-plugin-prettier/recommended';
 
-export const standalone = [
+const files = ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'];
+
+const baselineRule = [
   ...base,
   eslintConfigPrettier,
   eslintPluginPrettierRecommend,
   {
-    files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
+    files,
     plugins: {
       'detect-bad-words': declareBadWordsPlugin,
     },
     rules: {
       'detect-bad-words/in-code': 'error',
       'detect-bad-words/in-comment': 'error',
+      'turbo/no-undeclared-env-vars': 'off',
+      'unicorn/filename-case': 'off',
+      'n/no-unpublished-import': 'off',
+      'no-console': 'off',
+    },
+  },
+];
+
+export const standalone = [
+  ...baselineRule,
+  {
+    files,
+    rules: {
       'prettier/prettier': [
         'error',
         {
@@ -33,30 +48,10 @@ export const standalone = [
           usePrettierrc: false,
         },
       ],
-      'turbo/no-undeclared-env-vars': 'off',
-      'unicorn/filename-case': 'off',
-      'n/no-unpublished-import': 'off',
     },
   },
 ];
 
-export const respectPrettierConfig = [
-  ...base,
-  eslintConfigPrettier,
-  eslintPluginPrettierRecommend,
-  {
-    files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
-    plugins: {
-      'detect-bad-words': declareBadWordsPlugin,
-    },
-    rules: {
-      'detect-bad-words/in-code': 'error',
-      'detect-bad-words/in-comment': 'error',
-      'turbo/no-undeclared-env-vars': 'off',
-      'unicorn/filename-case': 'off',
-      'n/no-unpublished-import': 'off',
-    },
-  },
-];
+export const respectPrettierConfig = [...baselineRule];
 
 export default standalone;
