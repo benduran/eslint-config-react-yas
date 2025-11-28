@@ -1,3 +1,11 @@
+## 6.0.7 (2025-11-28)
+
+### 🛠️ Fixes 🛠️
+
+- fix: import the correct rule for reach and disable no-console, because it's pedantic (ddc015e0c0bbc209b1afc541fb82a3054e5dd0e4)
+
+---
+
 ## 6.0.6 (2025-11-20)
 
 ### 🔀 Miscellaneous 🔀
