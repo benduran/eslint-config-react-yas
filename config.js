@@ -21,6 +21,10 @@ const baselineRule = [
       'unicorn/filename-case': 'off',
       'n/no-unpublished-import': 'off',
       'no-console': 'off',
+      '@typescript-eslint/no-unnecessary-type-parameters': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      'unicorn/no-array-reduce': 'off',
+      'unicorn/no-null': 'off',
     },
   },
 ];
