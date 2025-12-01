@@ -25,7 +25,7 @@ const baselineRule = [
       '@typescript-eslint/no-explicit-any': 'off',
       'unicorn/no-array-reduce': 'off',
       'unicorn/no-null': 'off',
-      'unicord/prefer-spread': 'off',
+      'unicorn/prefer-spread': 'off',
     },
   },
 ];
