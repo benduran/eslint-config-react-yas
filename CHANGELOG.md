@@ -1,3 +1,11 @@
+## 6.0.8 (2025-12-01)
+
+### 🔀 Miscellaneous 🔀
+
+- chore: silence frivolous, annoying rules (3b4c80d9a1630a5d077b571b0f1a91aacdc24508)
+
+---
+
 ## 6.0.7 (2025-11-28)
 
 ### 🛠️ Fixes 🛠️
