@@ -1,3 +1,11 @@
+## 6.0.10 (2025-12-01)
+
+### 🛠️ Fixes 🛠️
+
+- fix: typo in rule (93096085da4a5f1bd9b9baafd9e951c09ddc056f)
+
+---
+
 ## 6.0.9 (2025-12-01)
 
 ### 🔀 Miscellaneous 🔀
