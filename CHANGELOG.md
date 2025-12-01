@@ -1,3 +1,11 @@
+## 6.0.9 (2025-12-01)
+
+### 🔀 Miscellaneous 🔀
+
+- chore: remove prefer spread (cb40c09441459b1a459e166fa2bf198ee7bcc123)
+
+---
+
 ## 6.0.8 (2025-12-01)
 
 ### 🔀 Miscellaneous 🔀
