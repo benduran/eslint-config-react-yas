@@ -1,3 +1,11 @@
+## 6.0.11 (2025-12-02)
+
+### 🛠️ Fixes 🛠️
+
+- fix: disable overly strict rule about having only a single if statement (1e6281eb9473dc881d14da64380858841c4479a2)
+
+---
+
 ## 6.0.10 (2025-12-01)
 
 ### 🛠️ Fixes 🛠️
