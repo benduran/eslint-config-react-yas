@@ -1,8 +1,7 @@
 declare module 'eslint-config-react-yas' {
-  import type { ConfigArray } from 'typescript-eslint';
-  const standalone: ConfigArray[];
+  const standalone: any;
   export { standalone };
-  export const respectPrettierConfig: ConfigArray[];
+  export const respectPrettierConfig: any;
 
   export default standalone;
 }
