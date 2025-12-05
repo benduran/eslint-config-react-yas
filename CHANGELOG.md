@@ -1,3 +1,17 @@
+## 7.0.2 (2025-12-05)
+
+### 🛠️ Fixes 🛠️
+
+- fix: another fix (902e6c6b7de0473c38be9b607257bd70b613191c)
+
+
+
+### 🔀 Miscellaneous 🔀
+
+- chore: removed ts-duality (9f034e386461ec24031b848284f9a9fbf5757687)
+
+---
+
 ## 7.0.1 (2025-12-05)
 
 ### 🛠️ Fixes 🛠️

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-react-yas",
-  "version": "7.0.1",
+  "version": "7.0.2",
   "description": "YAS. An ESLint config that, you know, just works and makes sense and requires no more setup",
   "main": "eslint.config.js",
   "module": "eslint.config.js",
@@ -23,8 +23,7 @@
   "author": "Benjamin Duran <stratodyne@gmail.com>",
   "license": "MIT",
   "private": false,
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {
     "@eslint/compat": "^2.0.0",
     "@eslint/js": "^9.39.1",
