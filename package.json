@@ -23,7 +23,6 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "ts-duality --clean --noCjs"
   },
   "dependencies": {
     "@eslint/compat": "^2.0.0",
