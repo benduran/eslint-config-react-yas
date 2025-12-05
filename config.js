@@ -1,38 +1,67 @@
-import { react as base } from '@cprussin/eslint-config';
+import { fixupPluginRules } from '@eslint/compat';
+import eslint from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import declareBadWordsPlugin from 'eslint-plugin-detect-bad-words';
+import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import eslintPluginPrettierRecommend from 'eslint-plugin-prettier/recommended';
+import reactPlugin from 'eslint-plugin-react';
+import reactHooksPlugin from 'eslint-plugin-react-hooks';
+import simpleImportSort from 'eslint-plugin-simple-import-sort';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
 
 const files = ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'];
 
-const baselineRule = [
-  ...base,
+/** @type {import('typescript-eslint').ConfigArray} */
+const baseline = tseslint.config(
+  eslint.configs.recommended,
+  ...tseslint.configs.recommended,
   eslintConfigPrettier,
   eslintPluginPrettierRecommend,
+  jsxA11yPlugin.flatConfigs.recommended,
   {
     files,
+    languageOptions: {
+      ecmaVersion: 'latest',
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+        ...globals.serviceworker,
+        ...globals.es2024,
+      },
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
+    name: 'eslint-config-react-yas-overrides',
     plugins: {
       'detect-bad-words': declareBadWordsPlugin,
+      react: reactPlugin,
+      'react-hooks': fixupPluginRules(reactHooksPlugin),
+      'simple-import-sort': simpleImportSort,
     },
     rules: {
+      ...reactHooksPlugin.configs.recommended.rules,
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'error',
+      // Let the print width, below, take care of this
+      'max-len': ['off'],
+      'no-async-promise-executor': 'off',
+      'no-var': ['error'],
+      'simple-import-sort/exports': 'error',
+      'simple-import-sort/imports': 'error',
       'detect-bad-words/in-code': 'error',
       'detect-bad-words/in-comment': 'error',
-      'turbo/no-undeclared-env-vars': 'off',
-      'unicorn/filename-case': 'off',
-      'n/no-unpublished-import': 'off',
-      'no-console': 'off',
-      '@typescript-eslint/no-unnecessary-type-parameters': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
-      'unicorn/no-array-reduce': 'off',
-      'unicorn/no-null': 'off',
-      'unicorn/prefer-spread': 'off',
-      'unicord/no-lonely-if': 'off',
     },
   },
-];
+);
 
+/** @type {import('typescript-eslint').ConfigArray} */
 export const standalone = [
-  ...baselineRule,
+  ...baseline,
   {
     files,
     rules: {
@@ -44,6 +73,7 @@ export const standalone = [
           // Note this is not the same behavior as eslint's "max-len":
           // https://prettier.io/docs/en/options.html#print-width
           printWidth: 120,
+          // Prettier default configuation overrides.
           singleQuote: true,
           trailingComma: 'all',
         },
@@ -58,6 +88,15 @@ export const standalone = [
   },
 ];
 
-export const respectPrettierConfig = [...baselineRule];
+/** @type {import('typescript-eslint').ConfigArray} */
+export const respectPrettierConfig = [
+  ...baseline,
+  {
+    files,
+    rules: {
+      'prettier/prettier': 'error',
+    },
+  },
+];
 
 export default standalone;
