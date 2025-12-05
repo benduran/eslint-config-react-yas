@@ -2,17 +2,18 @@
   "name": "eslint-config-react-yas",
   "version": "7.0.1",
   "description": "YAS. An ESLint config that, you know, just works and makes sense and requires no more setup",
-  "main": "config.js",
-  "module": "config.js",
+  "main": "eslint.config.js",
+  "module": "eslint.config.js",
+  "types": "types.d.ts",
   "exports": {
     ".": {
-      "default": "./config.js",
+      "default": "./eslint.config.js",
       "types": "./types.d.ts"
     }
   },
   "type": "module",
   "files": [
-    "config.js",
+    "eslint.config.js",
     "types.d.ts"
   ],
   "repository": {
