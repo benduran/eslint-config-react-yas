@@ -1,3 +1,17 @@
+## 7.0.0 (2025-12-05)
+
+### 🔀 Miscellaneous 🔀
+
+- chore: added missing repository link to package.json (89881430876a90092db5a14dcdbf8c5047048e57)
+
+
+
+### 🚨 Breaking Changes 🚨
+
+- fix!: went back to the old, looser format that actually worked (82f88affc5ec9ad689eb4b9eb1fc4e1b4c4fdc82)
+
+---
+
 ## 6.0.11 (2025-12-02)
 
 ### 🛠️ Fixes 🛠️
