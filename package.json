@@ -11,7 +11,10 @@
   "files": [
     "eslint.config.js"
   ],
-  "repository": "git@github.com:benduran/eslint-config-react-yas.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benduran/eslint-config-react-yas.git"
+  },
   "author": "Benjamin Duran <stratodyne@gmail.com>",
   "license": "MIT",
   "private": false,
