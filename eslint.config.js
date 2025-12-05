@@ -10,14 +10,17 @@ import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-export default tseslint.config(
+const files = ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'];
+
+/** @type {import('typescript-eslint').ConfigArray} */
+const baseline = tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   eslintConfigPrettier,
   eslintPluginPrettierRecommend,
   jsxA11yPlugin.flatConfigs.recommended,
   {
-    files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
+    files,
     languageOptions: {
       ecmaVersion: 'latest',
       globals: {
@@ -35,7 +38,6 @@ export default tseslint.config(
     name: 'eslint-config-react-yas-overrides',
     plugins: {
       'detect-bad-words': declareBadWordsPlugin,
-      // @ts-expect-error - typings are a mismatch between the tseslint and the react plugin
       react: reactPlugin,
       'react-hooks': fixupPluginRules(reactHooksPlugin),
       'simple-import-sort': simpleImportSort,
@@ -48,6 +50,21 @@ export default tseslint.config(
       'max-len': ['off'],
       'no-async-promise-executor': 'off',
       'no-var': ['error'],
+      'simple-import-sort/exports': 'error',
+      'simple-import-sort/imports': 'error',
+      'detect-bad-words/in-code': 'error',
+      'detect-bad-words/in-comment': 'error',
+      '@typescript-eslint/no-explicit-any': 'off',
+    },
+  },
+);
+
+/** @type {import('typescript-eslint').ConfigArray} */
+export const standalone = [
+  ...baseline,
+  {
+    files,
+    rules: {
       'prettier/prettier': [
         'error',
         {
@@ -67,11 +84,19 @@ export default tseslint.config(
           usePrettierrc: false,
         },
       ],
-      'simple-import-sort/exports': 'error',
-      'simple-import-sort/imports': 'error',
-      'detect-bad-words/in-code': 'error',
-      'detect-bad-words/in-comment': 'error',
-      '@typescript-eslint/no-explicit-any': 'off',
     },
   },
-);
+];
+
+/** @type {import('typescript-eslint').ConfigArray} */
+export const respectPrettierConfig = [
+  ...baseline,
+  {
+    files,
+    rules: {
+      'prettier/prettier': 'error',
+    },
+  },
+];
+
+export default standalone;
