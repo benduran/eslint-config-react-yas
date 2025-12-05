@@ -1,3 +1,11 @@
+## 7.0.3 (2025-12-05)
+
+### 🛠️ Fixes 🛠️
+
+- fix: downgraded eslint again because it's so broken (6e8a1ea97aaffda30e10738e64895efb1eb5b0d7)
+
+---
+
 ## 7.0.2 (2025-12-05)
 
 ### 🛠️ Fixes 🛠️
